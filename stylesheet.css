@@ -1,0 +1,59 @@
+body{
+	background-color:#EBE5EB;
+}
+#header{
+	background-image:url("http://placehold.it/1200x600");
+	min-height: 600px;
+	background-repeat: no-repeat;
+	background-position:left top;
+	background-size:cover;
+}
+#text{
+	font:Lato bold;
+	color:#562C84;
+	margin-top:20px;
+	font-size:30pt;
+	margin-left:200px; /*TO BE CHANGED LATER*/
+}
+#input_container{
+	padding-top:10px;
+	padding-left:200px;
+}
+
+.input{
+	height:60px;
+	width:500px;
+	margin-right:50px;
+	margin-bottom:30px;
+}
+.dropdown{
+	height:50px;
+	width:150px;
+	font-size:15pt;
+	font:Lato bold;
+	cursor:pointer;
+}
+
+.remind{
+	margin-left:10px;
+	border:none;
+	background-color:#EBE5EB;
+	color:#000000;
+}
+.login{
+	height:50px;
+	width:75%;
+	font:FontAwesome;
+	color:white;
+}
+.fb{
+	background-color: #3B5998;
+	border-left:1px solid white;
+}
+.fa{
+	margin-left:10px;
+	padding-right:15px;
+	border-right: 1pt solid rgba(255,255,255,0.6);
+
+}
+
