@@ -1,0 +1,147 @@
+body{
+	background-color:#EBE5EB;
+	font-family:'Lato';
+}
+#header{
+	background-image:url("../images/bg.jpg");
+	min-height: 600px;
+	background-repeat: no-repeat;
+	background-position:left top;
+	background-size:cover;
+}
+
+.fb{
+	background-color:#3B5998;
+	border:none;
+	border-radius:0px;
+	color:white;
+	font-size:15px;
+	font-weight:300;
+}
+
+.question{
+	font-family:'Lato';
+	font-size:40px;
+	font-weight:bold;
+	color:#562C84;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+.login, .sign{
+	border:none;
+	color:white;
+	font-size:20px;
+	border-radius:0px;
+	width:100px;
+	height:40px;
+	text-align:center;
+	font-weight:300;
+}
+
+.login{
+	background-color:#F5A9CA;
+}
+
+.login:hover{
+	color:#B87FB7;
+}
+
+.sign{
+	background-color:#B87FB7;
+}
+
+.sign:hover{
+	color:#F5A9CA;
+}
+
+.addreso{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+.form-control{
+	height:48px;
+	border-radius:0px;
+}
+
+.dropdown-toggle{
+	line-height:2.45;
+	border-radius:0px;
+}
+
+.dropdown-menu{
+	font-size:16px;
+}
+
+.reminder{
+	padding-top:15px;
+	text-align:center;
+}
+.reminder a{
+	text-decoration:none;
+	color:#666;
+	font-size:16px;
+}
+.reminder a:hover{
+	color:#B87FB7;
+}
+.addreso-btn{
+	background-color:#8071B3;
+	border-radius:0px;
+	border:none;
+	margin-bottom:30px;
+	color:rgba(255,255,255,0.9);
+}
+.addreso-btn:hover{
+	background-color:#412566;
+	color:white;
+}
+
+.done{
+	border-radius:0px;
+	border:none;
+	color:rgba(255,255,255,0.9);
+	margin-bottom:30px;
+	background-color:#F392BC;
+
+}
+.done:hover{
+	background-color:#A36FA3;
+	color:white;
+}
+
+hr{
+	border-top: 1px solid #aaa;
+	margin-bottom:35px;
+}
+
+footer{
+	background-color:#412566;
+	padding:15px 0px;
+	color:white;
+	margin-top:100px;
+}
+
+i.social{
+	font-size: 20px;
+}
+
+span.social{
+	opacity: 0.5;
+}
+
+.social:hover{
+	opacity:0.6;
+}
+
+.social{
+	margin-left:10px;
+	margin-right:10px;
+	font-size:20px;
+}
+
+.development{
+	font-size:16px;
+	font-weight:300;
+}
