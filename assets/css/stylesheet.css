@@ -12,13 +12,55 @@ body{
 
 .fb{
 	background-color:#3B5998;
+}
+
+.tweet{
+	background-color: #3C97D3;
+}
+
+.google{
+	background-color:#E74C3C;
+}
+
+.social-login i{
+	padding-right:20px;
+	margin:0 20px;
+	border-right:1px solid white;
+}
+.seperator{
+	margin-top:6px;
+	margin-bottom:11px;
+}
+
+.fb i{
+	padding-right:27px;
+}
+
+.modal-dialog{
+	width:400px;
+}
+
+.social-login{
+	padding:6px 0px;
 	border:none;
 	border-radius:0px;
 	color:white;
-	font-size:15px;
+	font-size:20px;
 	font-weight:300;
+	text-align:left;
+	margin-bottom:12px;
 }
-
+.login-cred{
+	height:43px !important;
+}
+.submit{
+	border:none;
+	border-radius:0px;
+	background-color: #27B78C;
+	font-size: 21px;
+	font-weight: 300;
+	color: white;
+}
 .question{
 	font-family:'Lato';
 	font-size:40px;
