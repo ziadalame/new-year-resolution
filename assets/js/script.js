@@ -37,11 +37,11 @@ jQuery(document).ready(function($) {
         }
     });
 
-		$(".submit").click(function(){
+		$("#submit_signup").click(function(){
 			var email = $("#signup_email").val();
 			var password = $("#signup_password").val();
 // Returns successful data submission message when the entered information is stored in database.
-		var dataString = [email, password];
+			 dataString = {'email_signup':email, 'password_signup':password,'submit_signup':true};
 
 
 		if(email==''||password=='')
@@ -55,7 +55,7 @@ jQuery(document).ready(function($) {
 		$.ajax({
 			type: "POST",
 			url: "process.php",
-			data: {data:dataString},
+			data: dataString,
 			success: function(result){
 				console.log(result);
 			}
@@ -64,6 +64,31 @@ jQuery(document).ready(function($) {
 		return false;
 		});
 
+
+		$("#submit_login").click(function(){
+			var email = $("#email_login").val();
+			var password = $("#password_login").val();
+
+			dataString = {'email_login':email, 'password_login':password,'submit_login':true};
+
+			if (email=='' || password=='')
+			{
+				alert("Please fill in all the fields");
+			}
+			else{
+				console.log("Input correct so far.");
+				$.ajax({
+					type:"POST",
+					url:"process.php",
+					data: dataString,
+					success: function(result){
+						console.log(result);
+					}
+				});
+			}
+			return false;
+
+		});
 
 
 

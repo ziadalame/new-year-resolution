@@ -8,7 +8,8 @@
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<!-- Bootstrap CSS -->
 	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
-	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>	<link href="assets/css/stylesheet.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>	  <link href="assets/css/stylesheet.css" rel="stylesheet">
+
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -38,20 +39,20 @@
 										<hr class="seperator">
 										<div class="clearfix"></div>
 										<div id="form">
-											<form id="signup-form" method="post" action="process.php" role="form" data-parsley-typey-validate  >
+											<form id="signup-form" method="POST" action="process.php" role="form" data-parsley-typey-validate  >
 												<div class="form-group">
 													<label for="email_signup">Email Address</label>
-													<input name="emailsignup"	 type="email" class="form-control login-cred" id="signup_email" placeholder="Enter email">
+													<input name="email_signup"	 type="email" class="form-control login-cred" id="signup_email" placeholder="Enter email">
 												</div>
 												<div class="form-group">
 													<label for="password_signup">Password</label>
-													<input name="passwordsignup" data-parsley-type="alphanum" data-parsley-minlength="6" data-parsley-maxlength="20"type="password" class="form-control login-cred" id="signup_password" placeholder="Password">
+													<input name="password_signup" data-parsley-type="alphanum" data-parsley-minlength="6" data-parsley-maxlength="20"type="password" class="form-control login-cred" id="signup_password" placeholder="Password">
 												</div>
 												<div class="form-group">
 													<label for="exampleInputPassword1">Confirm Your Password</label>
 													<input data-parsley-equalto="#signup_password" type="password" class="form-control login-cred" id="exampleInputPassword1" placeholder="Password">
 												</div>
-												<button type="submit" name="submit" class="btn btn-block submit">SignUp</button>
+												<button type="submit" name="submit" id="submit_signup" class="btn btn-block submit">SignUp</button>
 											</form>
 										</div>
 									</div>
@@ -82,16 +83,16 @@
 										<hr class="seperator">
 										<div class="clearfix"></div>
 										<div id="form">
-											<form id="login-form" role="form" data-parsley-validate>
+											<form id="login-form" role="form" action="process.php" method="post" data-parsley-validate>
 												<div class="press-email form-group">
 													<label for="exampleInputEmail1">Email Address</label>
-													<input name="email" type="email" class="form-control login-cred" id="emailInput" placeholder="Enter email">
+													<input name="email" type="email" class="form-control login-cred" id="email_login" placeholder="Enter email">
 												</div>
 												<div class="form-group">
 													<label for="exampleInputPassword1">Password</label>
-													<input data-parsley-type="alphanum" data-parsley-minlength="6" data-parsley-maxlength="20" type="password" class="form-control login-cred" id="password" placeholder="Password">
+													<input data-parsley-type="alphanum" data-parsley-minlength="6" data-parsley-maxlength="20" type="password" class="form-control login-cred" id="password_login" placeholder="Password">
 												</div>
-												<button type="submit" class="btn btn-block submit">Login</button>
+												<button type="submit" id="submit_login" class="btn btn-block submit">Login</button>
 											</form>
 										</div>
 									</div>
