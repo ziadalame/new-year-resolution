@@ -18,6 +18,7 @@
 		</head>
 		<body>
 
+
 			<div id="header">
 				<div class="container" ><!--container-->
 					<!--SIGNUP BUTTON-->
@@ -28,25 +29,29 @@
 								<div class="modal-content">
 									<div class="modal-body">
 										<div>
-											<button type="button" class="fb btn-block social-login"><i class="fa fa-facebook"></i>Login with facebook</button>
-											<button type="button" class="tweet btn-block social-login"><i class="fa fa-twitter"></i>Login with twitter</button>
-											<button type="button" class="google btn-block social-login"><i class="fa fa-google-plus"></i>Login with Google+</button>
+											<button type="button" class="fb btn-block social-login"><i class="fa fa-facebook"></i>Signup with facebook</button>
+											<button type="button" class="tweet btn-block social-login"><i class="fa fa-twitter"></i>Signup with twitter</button>
+											<button type="button" class="google btn-block social-login"><i class="fa fa-google-plus"></i>Signup with Google+</button>
 										</div>
 										<div class="clearfix">
 										</div>
 										<hr class="seperator">
 										<div class="clearfix"></div>
 										<div id="form">
-											<form role="form">
+											<form id="signup-form" method="post" action="process.php" role="form" data-parsley-typey-validate  >
 												<div class="form-group">
-													<label for="exampleInputEmail1">Email Address</label>
-													<input type="email" class="form-control login-cred" id="exampleInputEmail1" placeholder="Enter email">
+													<label for="email_signup">Email Address</label>
+													<input name="emailsignup"	 type="email" class="form-control login-cred" id="signup_email" placeholder="Enter email">
 												</div>
 												<div class="form-group">
-													<label for="exampleInputPassword1">Password</label>
-													<input type="password" class="form-control login-cred" id="exampleInputPassword1" placeholder="Password">
+													<label for="password_signup">Password</label>
+													<input name="passwordsignup" data-parsley-type="alphanum" data-parsley-minlength="6" data-parsley-maxlength="20"type="password" class="form-control login-cred" id="signup_password" placeholder="Password">
 												</div>
-												<button type="submit" class="btn btn-block submit">Login</button>
+												<div class="form-group">
+													<label for="exampleInputPassword1">Confirm Your Password</label>
+													<input data-parsley-equalto="#signup_password" type="password" class="form-control login-cred" id="exampleInputPassword1" placeholder="Password">
+												</div>
+												<button type="submit" name="submit" class="btn btn-block submit">SignUp</button>
 											</form>
 										</div>
 									</div>
@@ -54,6 +59,14 @@
 							</div><!-- /.modal-dialog -->
 						</div><!-- /.modal -->
 						
+
+
+						
+
+
+						<!--LOGIN BUTTON LOGIN BUTTON LOGIN BUTTON LOGIN BUTTON LOGIN BUTTON LOGIN BUTTON-->
+					
+
 						<a class="btn login pull-right" data-toggle="modal" href='#login' style="margin-right:20px;">Login</a><!--LOGIN BUTTON-->
 						<div class="modal fade" id="login">
 							<div class="modal-dialog">
@@ -69,14 +82,14 @@
 										<hr class="seperator">
 										<div class="clearfix"></div>
 										<div id="form">
-											<form role="form">
-												<div class="form-group">
+											<form id="login-form" role="form" data-parsley-validate>
+												<div class="press-email form-group">
 													<label for="exampleInputEmail1">Email Address</label>
-													<input type="email" class="form-control login-cred" id="exampleInputEmail1" placeholder="Enter email">
+													<input name="email" type="email" class="form-control login-cred" id="emailInput" placeholder="Enter email">
 												</div>
 												<div class="form-group">
 													<label for="exampleInputPassword1">Password</label>
-													<input type="password" class="form-control login-cred" id="exampleInputPassword1" placeholder="Password">
+													<input data-parsley-type="alphanum" data-parsley-minlength="6" data-parsley-maxlength="20" type="password" class="form-control login-cred" id="password" placeholder="Password">
 												</div>
 												<button type="submit" class="btn btn-block submit">Login</button>
 											</form>
@@ -95,17 +108,17 @@
 
 			<!-- Main COntainer -->
 
-			<div class="container">
+			<div id="main" class="container">
 
-				<div class="question">What are your new year's resolutions?</div>
+				<div class="question col-xs-12">What are your new year's resolutions?</div>
 
 				<div class="input_holder">
 
 					<div class="addreso row">
 
-						<div class="col-md-8">
+						<div class="col-md-8 col-xs-8 addresolution">
 							<div class="input-group">
-								<input type="text" class="form-control">
+								<input type="text" class="form-control" placeholder="Enter your resolution here">
 								<div class="input-group-btn">
 									<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Category <span class="caret"></span></button>
 									<ul class="dropdown-menu dropdown-menu-right" role="menu">
@@ -118,14 +131,14 @@
 								</div><!-- /btn-group -->
 							</div><!-- /input-group -->
 						</div><!-- /.col-md-6 -->
-						<div class="col-md-2 reminder"><a href="#">Add Reminder</a></div>
+						<div class="col-md-2 col-xs-4 reminder"><a href="#">Add Reminder</a></div>
 
 
 					</div>
 					<div class="addreso row">
-						<div class="col-md-8">
+						<div class="col-md-8 col-xs-8 addresolution">
 							<div class="input-group">
-								<input type="text" class="form-control">
+								<input type="text" class="form-control" placeholder="Enter your resolution here">
 								<div class="input-group-btn">
 									<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Category <span class="caret"></span></button>
 									<ul class="dropdown-menu dropdown-menu-right" role="menu">
@@ -138,13 +151,13 @@
 								</div><!-- /btn-group -->
 							</div><!-- /input-group -->
 						</div><!-- /.col-md-6 -->
-						<div class="col-md-2 reminder"><a href="#">Add Reminder</a></div>
+						<div class="col-md-2 col-xs-4 reminder"><a href="#">Add Reminder</a></div>
 
 					</div>
 					<div class="addreso row">
-						<div class="col-md-8">
+						<div class="col-md-8 col-xs-8 addresolution">
 							<div class="input-group">
-								<input type="text" class="form-control">
+								<input type="text" class="form-control" placeholder="Enter your resolution here">
 								<div class="input-group-btn">
 									<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Category <span class="caret"></span></button>
 									<ul class="dropdown-menu dropdown-menu-right" role="menu">
@@ -157,7 +170,7 @@
 								</div><!-- /btn-group -->
 							</div><!-- /input-group -->
 						</div><!-- /.col-md-6 -->
-						<div class="col-md-2 reminder"><a href="#">Add Reminder</a></div>
+						<div class="col-md-2 col-xs-4 reminder"><a href="#">Add Reminder</a></div>
 
 					</div>
 
@@ -188,9 +201,9 @@
 			<footer>
 			<div class="container">
 
-			<div class="col-md-6 development">Developed by Rami Awar - TeensWhoCode</div>
+			<div class="col-md-6 col-xs-12 development">Developed by Rami Awar - TeensWhoCode</div>
 
-				<div class="col-md-6 text-right">
+				<div class="col-md-6 col-xs-12 icons">
 
 					<i class="social"><i class="fa fa-info-circle"></i></i>
 					<span class="social">|</span>
@@ -214,8 +227,11 @@
 
 			<!-- jQuery -->
 			<script src="http://code.jquery.com/jquery.js"></script>
-			<script type="text/javascript" src="assets/js/script.js"></script>
 			<!-- Bootstrap JavaScript -->
 			<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+			<script type="text/javascript" src="assets/js/script.js"></script>
+			<script type="text/javascript" src="assets/js/parsley.js"></script>
+			<script type="text/javascript" src="assets/js/animatescroll.js"></script>
+
 		</body>
 		</html>

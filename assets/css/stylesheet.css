@@ -4,9 +4,9 @@ body{
 }
 #header{
 	background-image:url("../images/bg.jpg");
-	min-height: 600px;
+	min-height: 768px;
 	background-repeat: no-repeat;
-	background-position:left top;
+	background-position:center center;
 	background-size:cover;
 }
 
@@ -37,8 +37,9 @@ body{
 }
 
 .modal-dialog{
-	width:400px;
+	width:358px;
 }
+
 
 .social-login{
 	padding:6px 0px;
@@ -50,8 +51,18 @@ body{
 	text-align:left;
 	margin-bottom:12px;
 }
+.social-login.fb:hover{
+	background-color:#2B426B;
+}
+.social-login.tweet:hover{
+	background-color: #297199;
+}
+.social-login.google:hover{
+	background-color: #B73832;
+}
 .login-cred{
 	height:43px !important;
+	font-size:16px;
 }
 .submit{
 	border:none;
@@ -61,13 +72,20 @@ body{
 	font-weight: 300;
 	color: white;
 }
+.submit:hover{
+	color:white;
+	background-color: #238E6A;
+	text-decoration:none;
+}
+
 .question{
 	font-family:'Lato';
-	font-size:40px;
 	font-weight:bold;
 	color:#562C84;
 	margin-top:20px;
+	text-align:left;
 	margin-bottom:20px;
+	font-size:230%;
 }
 
 .login, .sign{
@@ -102,14 +120,23 @@ body{
 	margin-bottom:20px;
 }
 
+.modal-body{
+	width:398px;
+}
+
 .form-control{
 	height:48px;
 	border-radius:0px;
+	font-size:16px;
 }
 
 .dropdown-toggle{
 	line-height:2.45;
 	border-radius:0px;
+}
+
+.addresolution{
+	padding-right:0px;
 }
 
 .dropdown-menu{
@@ -118,12 +145,13 @@ body{
 
 .reminder{
 	padding-top:15px;
-	text-align:center;
+	text-align:center !important;
 }
 .reminder a{
 	text-decoration:none;
 	color:#666;
-	font-size:16px;
+	font-size:100%;
+	padding-left:2px;
 }
 .reminder a:hover{
 	color:#B87FB7;
@@ -134,9 +162,10 @@ body{
 	border:none;
 	margin-bottom:30px;
 	color:rgba(255,255,255,0.9);
+	font-weight:300;
 }
 .addreso-btn:hover{
-	background-color:#412566;
+	background-color:#625A8C;
 	color:white;
 }
 
@@ -146,10 +175,11 @@ body{
 	color:rgba(255,255,255,0.9);
 	margin-bottom:30px;
 	background-color:#F392BC;
+	font-weight:300;
 
 }
 .done:hover{
-	background-color:#A36FA3;
+	background-color:#C67FA2;
 	color:white;
 }
 
@@ -160,13 +190,18 @@ hr{
 
 footer{
 	background-color:#412566;
-	padding:15px 0px;
+	padding:10px 0px;
 	color:white;
 	margin-top:100px;
 }
-
+.icons{
+	padding-left:6px;
+	padding-right:6px;
+	text-align:center;
+	
+}
 i.social{
-	font-size: 20px;
+	font-size: 160%;
 }
 
 span.social{
@@ -174,16 +209,29 @@ span.social{
 }
 
 .social:hover{
-	opacity:0.6;
+	opacity:0.6;	
 }
 
 .social{
-	margin-left:10px;
-	margin-right:10px;
+	margin-left:6px;
+	margin-right:6px;
 	font-size:20px;
+	text-align:center;
 }
 
 .development{
-	font-size:16px;
+	font-size:100%;
+	text-align:center;
 	font-weight:300;
+}
+
+.parsley-type, .parsley-minlength, .parsley-maxlength, .parsley-alphanum, .parsley-equalto{
+	list-style:none;
+	color:#DD4B39;
+	text-align:center;
+	margin-left:-40px;
+}
+
+.has-success .form-control {
+	border-color: #27B78C;
 }

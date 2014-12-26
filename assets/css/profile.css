@@ -1,0 +1,167 @@
+body{
+	background-color:#EBE5EB;
+	font-family:'Lato' !important;
+	color:white;
+}
+.profile{
+	width:230px;
+	height:230px;
+}
+
+.header{
+	margin:0px 0px;
+	padding:0px 0px;
+}
+
+.image{
+	text-align:center;
+
+}
+.name{
+	font-weight:400;
+	font-size:36px;
+	color:white;
+}
+.green-bg{
+	background-color:#27B78C;
+	background-size:cover;
+	background-position: center center;
+	min-width:1366px; 
+	top:0;
+	left:0;
+	height:160px;
+	border-bottom:9px solid #24A690;
+}
+
+.email, .dob{
+	font-weight:300;	
+	font-size:20px;
+	color:#EBE5EB;
+}
+
+.progress-bar{
+	background-color: #27b78c;
+}
+
+.progress{
+	border:none;
+	border-radius:0px;
+	height:30px;	
+}
+
+.quote{
+	font-size:230%;
+	color:#412566;
+	font-weight:600;
+	text-align:center;
+}
+
+.table{
+	color:#231f20;
+	font-size:140%;
+	margin-top:10% - 20px;
+
+}
+td{
+	border-top:1px solid #231f20 !important;
+	border-right:1px solid #231f20;
+	border-bottom:1px solid #231f20;
+	text-align:center;
+}
+
+tr > td:first-child{
+	border-left:1px solid #231f20;
+	border-top:1px solid #231f20 !important;
+	border-right:none;
+	width:100px;
+	border-bottom:1px solid #231f20;
+}
+tr > td:nth-child(2){
+	border-top:1px solid #231f20 !important;
+	border-right:none;
+	width:150px;
+	border-left:none;
+	border-bottom:1px solid #231f20;
+}
+tr > td:nth-child(3){
+	border-top:1px solid #231f20 !important;
+	border-left:none;
+	padding-left:50px !important;
+	border-right:1px solid #231f20;
+	border-bottom:1px solid #231f20;
+	text-align:left;
+}
+
+
+
+footer{
+	background-color:#412566;
+	padding:10px 0px;
+	color:white;
+	margin-top:100px;
+}
+.icons{
+	padding-left:6px;
+	padding-right:6px;
+	text-align:center;
+	
+}
+i.social{
+	font-size: 140%;
+}
+
+span.social{
+	opacity: 0.5;
+}
+
+.social:hover{
+	opacity:0.6;	
+}
+
+.social{
+	margin-left:8px;
+	margin-right:8px;
+	font-size:20px;
+	text-align:center;
+}
+
+.development{
+	font-size:104%;
+	text-align:center;
+	font-weight:300;
+}
+
+
+input[type=checkbox].css-checkbox {
+	position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+}
+
+input[type=checkbox].css-checkbox + label.css-label {
+	padding-left:35px;
+	height:30px; 
+	display:inline-block;
+	line-height:30px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	font-size:30px;
+	vertical-align:middle;
+	cursor:pointer;
+
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+	background-position: 0 -30px;
+}
+label.css-label {
+	background-image:url("../images/checkbox.jpg");
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.col-xs-12 .name, .col-xs-12 .email, .col-xs-12 .dob{
+	text-align:center;
+}
