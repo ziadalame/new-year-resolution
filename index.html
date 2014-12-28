@@ -24,8 +24,13 @@
 				<div class="container" ><!--container-->
 					<!--SIGNUP BUTTON-->
 					<div id="button_wrapper" class="col-xs-12" style="padding-top:20px;">
-						<a class="btn sign pull-right" data-toggle="modal" href='#signup'>Signup</a>
+						<div class="col-xs-12" id="email_display"></div>
+						<a class="btn sign pull-right username_button" data-toggle="modal" href='#signup'>Signup</a>
 						<div class="modal fade" id="signup">
+						<div class="alert alert-warning alert-dismissible username_exists" id="signup_alert"role="alert">
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="false">&times;</span></button>
+							<strong>Warning!</strong> Username already exists!
+						</div>
 							<div class="modal-dialog">
 								<div class="modal-content">
 									<div class="modal-body">
@@ -54,12 +59,13 @@
 												</div>
 												<button type="submit" name="submit" id="submit_signup" class="btn btn-block submit">SignUp</button>
 											</form>
+											
 										</div>
 									</div>
 								</div><!-- /.modal-content -->
 							</div><!-- /.modal-dialog -->
 						</div><!-- /.modal -->
-						
+
 
 
 						
@@ -68,8 +74,12 @@
 						<!--LOGIN BUTTON LOGIN BUTTON LOGIN BUTTON LOGIN BUTTON LOGIN BUTTON LOGIN BUTTON-->
 					
 
-						<a class="btn login pull-right" data-toggle="modal" href='#login' style="margin-right:20px;">Login</a><!--LOGIN BUTTON-->
+						<a class="btn login pull-right username_button" data-toggle="modal" href='#login' style="margin-right:20px;">Login</a><!--LOGIN BUTTON-->
 						<div class="modal fade" id="login">
+						<div class="alert alert-warning alert-dismissible username_exists" id="login_alert"role="alert">
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<strong>Warning!</strong> Incorrect username or password!
+						</div>
 							<div class="modal-dialog">
 								<div class="modal-content">
 									<div class="modal-body">
